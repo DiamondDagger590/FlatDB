@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    compile group: 'com.intellij', name: 'annotations', version: '9.0.4'
+   // compile group: 'com.intellij', name: 'annotations', version: '9.0.4'
     compile group: 'com.h2database', name: 'h2', version: '1.4.198'
     compileOnly group: 'com.google.guava', name: 'guava', version: '19.0'
 

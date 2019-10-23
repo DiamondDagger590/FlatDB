@@ -24,8 +24,6 @@
 
 package com.cyr1en.flatdb;
 
-import org.intellij.lang.annotations.Language;
-
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
@@ -33,9 +31,9 @@ import java.util.Map;
 import java.util.Optional;
 
 public interface Database {
-  Optional<ResultSet> executeQuery(@Language("SQL") String query, String... replacements);
+  Optional<ResultSet> executeQuery(String query, String... replacements);
 
-  int executeUpdate(@Language("SQL") String sql, String... replacements);
+  int executeUpdate(String sql, String... replacements);
 
   Optional<DatabaseMetaData> getMetaData();
 

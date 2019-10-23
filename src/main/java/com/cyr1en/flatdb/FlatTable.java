@@ -24,8 +24,6 @@
 
 package com.cyr1en.flatdb;
 
-import org.intellij.lang.annotations.Language;
-
 import java.sql.ResultSet;
 import java.util.Optional;
 
@@ -39,7 +37,7 @@ public class FlatTable {
     this.database = database;
   }
 
-  public Optional<ResultSet> executeQuery(@Language("SQL") String query, String... replacements) {
+  public Optional<ResultSet> executeQuery(String query, String... replacements) {
    return null;
   }
 }

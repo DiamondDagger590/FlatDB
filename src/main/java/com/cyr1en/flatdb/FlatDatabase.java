@@ -26,7 +26,6 @@ package com.cyr1en.flatdb;
 
 import com.cyr1en.flatdb.annotations.processor.TableProcessor;
 import lombok.Getter;
-import org.intellij.lang.annotations.Language;
 
 import java.sql.*;
 import java.util.*;
@@ -53,7 +52,7 @@ public class FlatDatabase implements Database {
   }
 
   @Override
-  public Optional<ResultSet> executeQuery(@Language("SQL") String query, String... replacements) {
+  public Optional<ResultSet> executeQuery(String query, String... replacements) {
     try {
       Statement statement = connection.createStatement();
       String fQuery = String.format(query, (Object[]) replacements);
@@ -73,7 +72,7 @@ public class FlatDatabase implements Database {
   }
 
   @Override
-  public int executeUpdate(@Language("SQL") String sql, String... replacements) {
+  public int executeUpdate(String sql, String... replacements) {
     try {
       Statement statement = connection.createStatement();
       String fSql = String.format(sql, (Object[]) replacements);
