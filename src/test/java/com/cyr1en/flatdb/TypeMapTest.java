@@ -28,7 +28,7 @@ import com.cyr1en.flatdb.types.SQLTypePair;
 import com.cyr1en.flatdb.types.TypeMap;
 import com.google.common.collect.ImmutableMap;
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.sql.Types;
 import java.util.Map;
