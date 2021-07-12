@@ -2,8 +2,8 @@ package com.cyr1en.flatdb;
 
 import com.cyr1en.flatdb.util.FastStrings;
 import org.assertj.core.api.Assertions;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
@@ -14,7 +14,7 @@ public class DatabaseOptionsTest {
 
   private DatabaseBuilder dbBuilder;
 
-  @Before
+  @BeforeAll
   public void before() {
     dbBuilder = new DatabaseBuilder();
   }
